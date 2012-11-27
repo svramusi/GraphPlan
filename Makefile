@@ -17,3 +17,6 @@ utilities.o: graphplan.h
 
 planner.o: graphplan.h
 
+clean:
+	rm -f *.o
+	rm -f graphplan

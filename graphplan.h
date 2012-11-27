@@ -13,6 +13,11 @@
 #include<ctype.h>
 #include<string.h>
 
+#ifdef _WINDOWS
+#include <windows.h>
+#include <malloc.h>
+#endif
+
 typedef struct VERTEX vertex_s, *vertex_t;
 typedef struct TOKENLIST *string_list;
 

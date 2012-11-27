@@ -19,8 +19,12 @@
 
 #ifdef __cplusplus
 
+#ifdef _WINDOWS
+#include <io.h>
+#else
 #include <stdlib.h>
 #include <osfcn.h>
+#endif
 
 /* use prototypes in function declarations */
 #define YY_USE_PROTOS
@@ -37,7 +41,9 @@
 void *malloc( size_t );
 void free( void* );
 #else
+#ifndef _WINDOWS
 #include <stdlib.h>
+#endif
 #endif	/* __GNUC__ */
 
 #define YY_USE_PROTOS
@@ -65,9 +71,11 @@ void free( void* );
  * so it's got to be a K&R compiler, and therefore there's no standard
  * place from which to include these definitions
  */
+#ifndef _WINDOWS
 char *malloc();
 int free();
 int read();
+#endif
 #endif
 
 

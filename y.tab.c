@@ -11,15 +11,16 @@
 #define	EFFECTS	265
 
 
+#ifndef _WINDOWS
+#include <stdlib.h>
+#endif
+#include <stdio.h>
+#include <string.h>
 
-	#include <stdio.h>
-	#include <string.h>
-	#include <stdlib.h>
-
-	#include "graphplan.h"
+#include "graphplan.h"
 	
-	fact_list fact_list_append(fact_list,fact_list);
-	token_list token_list_append(token_list,token_list);
+fact_list fact_list_append(fact_list,fact_list);
+token_list token_list_append(token_list,token_list);
 	
 int  yylex();
 void yyerror(char *);
@@ -677,7 +678,11 @@ case 14:
 {
 			token_list foo;
 			foo = (token_list) calloc(1,sizeof(token_list_elt));
+#ifdef _WINDOWS
+			foo->item = (char*)malloc(4*sizeof(char));
+#else
 			foo->item = malloc(4*sizeof(char));
+#endif
 			strcpy(foo->item,"del");
 			foo->next = yyvsp[-1].fl->item;
 			yyvsp[-1].fl->item = foo;

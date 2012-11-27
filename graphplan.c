@@ -9,7 +9,16 @@
 *************************************************************************/
 
 #include "graphplan.h"
+
+#ifdef _WINDOWS
+#include "timeofday.h"
+
+#define RANDOM() rand()
+#else
 #include <sys/time.h>
+
+#define RANDOM() random()
+#endif
 
 /* The code consists of the following main parts.
 
@@ -407,7 +416,7 @@ void create_graph_layer(op_list olist)
     get_next(fact_table[time+1],0);  /**INIT**/
     for(i=0; (v = get_next(fact_table[time+1],1)) != NULL; ++i) {
       if (i >= MAXNODES) do_error("Too many ops. Need to increase MAXNODES");
-      v->rand1 = random(); /* these are used in memoizing */
+      v->rand1 = RANDOM(); /* these are used in memoizing */
       set_uid(v,i);        /* everybody needs a unique ID */
     }
 
@@ -452,7 +461,7 @@ int create_graph(op_list olist, fact_list flist, int maxtime)
   /* load in initial facts. */
   for(i=0; flist != NULL; flist = flist->next) {
     v = insert_token_list(fact_table[0],flist->item);
-    v->rand1 = random();
+    v->rand1 = RANDOM();
     set_uid(v,i++);
   }
   /* make the graph */
@@ -513,7 +522,7 @@ void make_copy(int time)
     w = insert_into_table(fact_table[time+1],v->name);
     w->prev_time = v;
     v->next_time = w;
-    w->rand1 = random();
+    w->rand1 = RANDOM();
     w->uid_mask = v->uid_mask;
     w->uid_block = v->uid_block;
 

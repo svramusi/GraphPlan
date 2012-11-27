@@ -11,7 +11,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<ctype.h>
-#include<strings.h>
+#include<string.h>
 
 typedef struct VERTEX vertex_s, *vertex_t;
 typedef struct TOKENLIST *string_list;

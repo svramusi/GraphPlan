@@ -56,7 +56,7 @@
 (d4 Object)
 
 (preconds
- (on whiteKnight a2))
+ (on whiteKnight b4))
 
 (effects
- (on whiteKnight a1))
+ (on whiteKnight a4))

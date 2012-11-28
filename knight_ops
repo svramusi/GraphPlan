@@ -1,15 +1,25 @@
 
 (operator
- place
- (params (<x> Knight) (<y> Space))
- (preconds)
- (effects
-  (on <x> <y>)))
-
-(operator
  move
  (params (<x> Knight) (<y> Space) (<z> Space))
  (preconds
   (on <x> <y>))
  (effects
-  (on <x> <z>)))
+  (on <x> <z>) (del on <x> <y>)))
+
+(operator
+ move_a1_b3
+ (params (<x> Knight))
+ (preconds
+  (on <x> a1))
+ (effects
+  (on <x> b3)))
+
+(operator
+ move_a1_c2
+ (params (<x> Knight))
+ (preconds
+  (on <x> a1))
+ (effects
+  (on <x> c2)))
+

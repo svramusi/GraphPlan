@@ -1,0 +1,62 @@
+(board Board)
+(board Object)
+
+(whiteKnight Knight)
+(whiteKnight Object)
+
+(a1 Space)
+(a1 Object)
+
+(a2 Space)
+(a2 Object)
+
+(a3 Space)
+(a3 Object)
+
+(a4 Space)
+(a4 Object)
+
+
+(b1 Space)
+(b1 Object)
+
+(b2 Space)
+(b2 Object)
+
+(b3 Space)
+(b3 Object)
+
+(b4 Space)
+(b4 Object)
+
+
+(c1 Space)
+(c1 Object)
+
+(c2 Space)
+(c2 Object)
+
+(c3 Space)
+(c3 Object)
+
+(c4 Space)
+(c4 Object)
+
+
+(d1 Space)
+(d1 Object)
+
+(d2 Space)
+(d2 Object)
+
+(d3 Space)
+(d3 Object)
+
+(d4 Space)
+(d4 Object)
+
+(preconds
+ (on whiteKnight a2))
+
+(effects
+ (on whiteKnight a1))

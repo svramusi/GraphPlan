@@ -1,0 +1,15 @@
+
+(operator
+ place
+ (params (<x> Knight) (<y> Space))
+ (preconds)
+ (effects
+  (on <x> <y>)))
+
+(operator
+ move
+ (params (<x> Knight) (<y> Space) (<z> Space))
+ (preconds
+  (on <x> <y>))
+ (effects
+  (on <x> <z>)))

@@ -5,7 +5,7 @@
  (preconds
   (on <x> a1))
  (effects
-  (on <x> b3) (del on <x> a1)))
+  (on <x> b3) (not-on <x> a1)))
 
 (operator
  move_a1_c2
@@ -13,7 +13,7 @@
  (preconds
   (on <x> a1))
  (effects
-  (on <x> c2) (del on <x> a1)))
+  (on <x> c2) (not-on <x> a1)))
 
 (operator
  move_b1_a3
@@ -21,7 +21,7 @@
  (preconds
   (on <x> b1))
  (effects
-  (on <x> a3) (del on <x> b1)))
+  (on <x> a3) (not-on <x> b1)))
 
 (operator
  move_b1_c3
@@ -29,7 +29,7 @@
  (preconds
   (on <x> b1))
  (effects
-  (on <x> c3) (del on <x> b1)))
+  (on <x> c3) (not-on <x> b1)))
 
 (operator
  move_b1_d2
@@ -37,7 +37,7 @@
  (preconds
   (on <x> b1))
  (effects
-  (on <x> d2) (del on <x> b1)))
+  (on <x> d2) (not-on <x> b1)))
 
 (operator
  move_c1_a2
@@ -45,7 +45,7 @@
  (preconds
   (on <x> c1))
  (effects
-  (on <x> a2) (del on <x> c1)))
+  (on <x> a2) (not-on <x> c1)))
 
 (operator
  move_c1_b3
@@ -53,7 +53,7 @@
  (preconds
   (on <x> c1))
  (effects
-  (on <x> b3) (del on <x> c1)))
+  (on <x> b3) (not-on <x> c1)))
 
 (operator
  move_c1_d3
@@ -61,7 +61,7 @@
  (preconds
   (on <x> c1))
  (effects
-  (on <x> d3) (del on <x> c1)))
+  (on <x> d3) (not-on <x> c1)))
 
 (operator
  move_d1_b2
@@ -69,7 +69,7 @@
  (preconds
   (on <x> d1))
  (effects
-  (on <x> b2) (del on <x> d1)))
+  (on <x> b2) (not-on <x> d1)))
 
 (operator
  move_d1_c3
@@ -77,7 +77,7 @@
  (preconds
   (on <x> d1))
  (effects
-  (on <x> c3) (del on <x> d1)))
+  (on <x> c3) (not-on <x> d1)))
 
 (operator
  move_a2_c1
@@ -85,7 +85,7 @@
  (preconds
   (on <x> a2))
  (effects
-  (on <x> c1) (del on <x> a2)))
+  (on <x> c1) (not-on <x> a2)))
 
 (operator
  move_a2_c3
@@ -93,7 +93,7 @@
  (preconds
   (on <x> a2))
  (effects
-  (on <x> c3) (del on <x> a2)))
+  (on <x> c3) (not-on <x> a2)))
 
 (operator
  move_a2_b4
@@ -101,7 +101,7 @@
  (preconds
   (on <x> a2))
  (effects
-  (on <x> b4) (del on <x> a2)))
+  (on <x> b4) (not-on <x> a2)))
 
 (operator
  move_b2_a4
@@ -109,7 +109,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> a4) (del on <x> b2)))
+  (on <x> a4) (not-on <x> b2)))
 
 (operator
  move_b2_c4
@@ -117,7 +117,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> c4) (del on <x> b2)))
+  (on <x> c4) (not-on <x> b2)))
 
 (operator
  move_b2_d1
@@ -125,7 +125,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> d1) (del on <x> b2)))
+  (on <x> d1) (not-on <x> b2)))
 
 (operator
  move_b2_d1
@@ -133,7 +133,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> d1) (del on <x> b2)))
+  (on <x> d1) (not-on <x> b2)))
 
 (operator
  move_c2_a1
@@ -141,7 +141,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> a1) (del on <x> c2)))
+  (on <x> a1) (not-on <x> c2)))
 
 (operator
  move_c2_a3
@@ -149,7 +149,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> a3) (del on <x> c2)))
+  (on <x> a3) (not-on <x> c2)))
 
 (operator
  move_c2_b4
@@ -157,7 +157,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> b4) (del on <x> c2)))
+  (on <x> b4) (not-on <x> c2)))
 
 (operator
  move_c2_d4
@@ -165,7 +165,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> d4) (del on <x> c2)))
+  (on <x> d4) (not-on <x> c2)))
 
 (operator
  move_d2_b1
@@ -173,7 +173,7 @@
  (preconds
   (on <x> d2))
  (effects
-  (on <x> b1) (del on <x> d2)))
+  (on <x> b1) (not-on <x> d2)))
 
 (operator
  move_d2_b3
@@ -181,7 +181,7 @@
  (preconds
   (on <x> d2))
  (effects
-  (on <x> b3) (del on <x> d2)))
+  (on <x> b3) (not-on <x> d2)))
 
 (operator
  move_d2_c4
@@ -189,7 +189,7 @@
  (preconds
   (on <x> d2))
  (effects
-  (on <x> c4) (del on <x> d2)))
+  (on <x> c4) (not-on <x> d2)))
 
 (operator
  move_a3_b1
@@ -197,7 +197,7 @@
  (preconds
   (on <x> a3))
  (effects
-  (on <x> b1) (del on <x> a3)))
+  (on <x> b1) (not-on <x> a3)))
 
 (operator
  move_a3_c4
@@ -205,7 +205,7 @@
  (preconds
   (on <x> a3))
  (effects
-  (on <x> c4) (del on <x> a3)))
+  (on <x> c4) (not-on <x> a3)))
 
 (operator
  move_a3_c2
@@ -213,7 +213,7 @@
  (preconds
   (on <x> a3))
  (effects
-  (on <x> c2) (del on <x> a3)))
+  (on <x> c2) (not-on <x> a3)))
 
 (operator
  move_b3_a1
@@ -221,7 +221,7 @@
  (preconds
   (on <x> b3))
  (effects
-  (on <x> a1) (del on <x> b3)))
+  (on <x> a1) (not-on <x> b3)))
 
 (operator
  move_b3_c1
@@ -229,7 +229,7 @@
  (preconds
   (on <x> b3))
  (effects
-  (on <x> c1) (del on <x> b3)))
+  (on <x> c1) (not-on <x> b3)))
 
 (operator
  move_b3_d2
@@ -237,7 +237,7 @@
  (preconds
   (on <x> b3))
  (effects
-  (on <x> d2) (del on <x> b3)))
+  (on <x> d2) (not-on <x> b3)))
 
 (operator
  move_c3_a4
@@ -245,7 +245,7 @@
  (preconds
   (on <x> c3))
  (effects
-  (on <x> a4) (del on <x> c3)))
+  (on <x> a4) (not-on <x> c3)))
 
 (operator
  move_c3_b1
@@ -253,7 +253,7 @@
  (preconds
   (on <x> c3))
  (effects
-  (on <x> b1) (del on <x> c3)))
+  (on <x> b1) (not-on <x> c3)))
 
 (operator
  move_c3_d1
@@ -261,7 +261,7 @@
  (preconds
   (on <x> c3))
  (effects
-  (on <x> d1) (del on <x> c3)))
+  (on <x> d1) (not-on <x> c3)))
 
 (operator
  move_d3_c1
@@ -269,7 +269,7 @@
  (preconds
   (on <x> d3))
  (effects
-  (on <x> c1) (del on <x> d3)))
+  (on <x> c1) (not-on <x> d3)))
 
 (operator
  move_d3_b2
@@ -277,7 +277,7 @@
  (preconds
   (on <x> d3))
  (effects
-  (on <x> b2) (del on <x> d3)))
+  (on <x> b2) (not-on <x> d3)))
 
 (operator
  move_d3_b4
@@ -285,7 +285,7 @@
  (preconds
   (on <x> d3))
  (effects
-  (on <x> b4) (del on <x> d3)))
+  (on <x> b4) (not-on <x> d3)))
 
 (operator
  move_a4_b2
@@ -293,7 +293,7 @@
  (preconds
   (on <x> a4))
  (effects
-  (on <x> b2) (del on <x> a4)))
+  (on <x> b2) (not-on <x> a4)))
 
 (operator
  move_a4_c3
@@ -301,7 +301,7 @@
  (preconds
   (on <x> a4))
  (effects
-  (on <x> c3) (del on <x> a4)))
+  (on <x> c3) (not-on <x> a4)))
 
 (operator
  move_b4_a2
@@ -309,7 +309,7 @@
  (preconds
   (on <x> b4))
  (effects
-  (on <x> a2) (del on <x> b4)))
+  (on <x> a2) (not-on <x> b4)))
 
 (operator
  move_b4_c2
@@ -317,7 +317,7 @@
  (preconds
   (on <x> b4))
  (effects
-  (on <x> c2) (del on <x> b4)))
+  (on <x> c2) (not-on <x> b4)))
 
 (operator
  move_b4_d3
@@ -325,7 +325,7 @@
  (preconds
   (on <x> b4))
  (effects
-  (on <x> d3) (del on <x> b4)))
+  (on <x> d3) (not-on <x> b4)))
 
 (operator
  move_c4_a3
@@ -333,7 +333,7 @@
  (preconds
   (on <x> c4))
  (effects
-  (on <x> a3) (del on <x> c4)))
+  (on <x> a3) (not-on <x> c4)))
 
 (operator
  move_c4_b2
@@ -341,7 +341,7 @@
  (preconds
   (on <x> c4))
  (effects
-  (on <x> b2) (del on <x> c4)))
+  (on <x> b2) (not-on <x> c4)))
 
 (operator
  move_c4_d2
@@ -349,7 +349,7 @@
  (preconds
   (on <x> c4))
  (effects
-  (on <x> d2) (del on <x> c4)))
+  (on <x> d2) (not-on <x> c4)))
 
 (operator
  move_d4_b3
@@ -357,7 +357,7 @@
  (preconds
   (on <x> d4))
  (effects
-  (on <x> b3) (del on <x> d4)))
+  (on <x> b3) (not-on <x> d4)))
 
 (operator
  move_d4_c2
@@ -365,5 +365,13 @@
  (preconds
   (on <x> d4))
  (effects
-  (on <x> c2) (del on <x> d4)))
+  (on <x> c2) (not-on <x> d4)))
+
+(operator
+ take_b4_d3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b4) (on <y> d3))
+ (effects
+  (on <x> d3) (not-on <x> b4) (not-on <y> d3)))
 

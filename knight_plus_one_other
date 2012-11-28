@@ -4,6 +4,10 @@
 (whiteKnight Knight)
 (whiteKnight Object)
 
+(k1 Knight)
+(k1 Object)
+
+
 (a1 Space)
 (a1 Object)
 
@@ -56,7 +60,7 @@
 (d4 Object)
 
 (preconds
- (on whiteKnight b4))
+ (on whiteKnight b4) (on k1 d3))
 
 (effects
- (on whiteKnight a4) (not-on whiteKnight b4))
+ (on whiteKnight a4) (not-on k1 d3))

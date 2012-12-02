@@ -1,4 +1,3 @@
-
 (operator
  move_a1_b3
  (params (<x> Knight))
@@ -413,13 +412,421 @@
   (on <x> c2) (not-on <x> d4)
   (empty d4) (not-empty c2)))
 
+
+
+
+
+
+(operator
+ take_a1_b3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a1) (on <y> b3))
+ (effects
+  (on <x> b3) (not-on <y> b3) (not-on <x> a1)
+  (empty a1) (not-empty b3)))
+
+(operator
+ take_a1_c2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a1) (on <y> c2))
+ (effects
+  (on <x> c2) (not-on <y> c2) (not-on <x> a1)
+  (empty a1) (not-empty c2)))
+
+(operator
+ take_b1_a3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b1) (on <y> a3))
+ (effects
+  (on <x> a3) (not-on <y> a3) (not-on <x> b1)
+  (empty b1) (not-empty a3)))
+
+(operator
+ take_b1_c3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b1) (on <y> c3))
+ (effects
+  (on <x> c3) (not-on <y> c3) (not-on <x> b1)
+  (empty b1) (not-empty c3)))
+
+(operator
+ take_b1_d2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b1) (on <y> d2))
+ (effects
+  (on <x> d2) (not-on <y> d2) (not-on <x> b1)
+  (empty b1) (not-empty d2)))
+
+(operator
+ take_c1_a2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c1) (on <y> a2))
+ (effects
+  (on <x> a2) (not-on <y> a2) (not-on <x> c1)
+  (empty c1) (not-empty a2)))
+
+(operator
+ take_c1_b3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c1) (on <y> b3))
+ (effects
+  (on <x> b3) (not-on <y> b3) (not-on <x> c1)
+  (empty c1) (not-empty b3)))
+
+(operator
+ take_c1_d3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c1) (on <y> d3))
+ (effects
+  (on <x> d3) (not-on <y> d3) (not-on <x> c1)
+  (empty c1) (not-empty d3)))
+
+(operator
+ take_d1_b2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d1) (on <y> b2))
+ (effects
+  (on <x> b2) (not-on <y> b2) (not-on <x> d1)
+  (empty d1) (not-empty b2)))
+
+(operator
+ take_d1_c3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d1) (on <y> c3))
+ (effects
+  (on <x> c3) (not-on <y> c3) (not-on <x> d1)
+  (empty d1) (not-empty c3)))
+
+(operator
+ take_a2_c1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a2) (on <y> c1))
+ (effects
+  (on <x> c1) (not-on <y> c1) (not-on <x> a2)
+  (empty a2) (not-empty c1)))
+
+(operator
+ take_a2_c3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a2) (on <y> c3))
+ (effects
+  (on <x> c3) (not-on <y> c3) (not-on <x> a2)
+  (empty a2) (not-empty c3)))
+
+(operator
+ take_a2_b4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a2) (on <y> b4))
+ (effects
+  (on <x> b4) (not-on <y> b4) (not-on <x> a2)
+  (empty a2) (not-empty b4)))
+
+(operator
+ take_b2_a4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b2) (on <y> a4))
+ (effects
+  (on <x> a4) (not-on <y> a4) (not-on <x> b2)
+  (empty b2) (not-empty a4)))
+
+(operator
+ take_b2_c4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b2) (on <y> c4))
+ (effects
+  (on <x> c4) (not-on <y> c4) (not-on <x> b2)
+  (empty b2) (not-empty c4)))
+
+(operator
+ take_b2_d3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b2) (on <y> d3))
+ (effects
+  (on <x> d3) (not-on <y> d3) (not-on <x> b2)
+  (empty b2) (not-empty d3)))
+
+(operator
+ take_b2_d1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b2) (on <y> d1))
+ (effects
+  (on <x> d1) (not-on <y> d1) (not-on <x> b2)
+  (empty b2) (not-empty d1)))
+
+(operator
+ take_c2_a1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c2) (on <y> a1))
+ (effects
+  (on <x> a1) (not-on <y> a1) (not-on <x> c2)
+  (empty c2) (not-empty a1)))
+
+(operator
+ take_c2_a3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c2) (on <y> a3))
+ (effects
+  (on <x> a3) (not-on <y> a3) (not-on <x> c2)
+  (empty c2) (not-empty a3)))
+
+(operator
+ take_c2_b4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c2) (on <y> b4))
+ (effects
+  (on <x> b4) (not-on <y> b4) (not-on <x> c2)
+  (empty c2) (not-empty b4)))
+
+(operator
+ take_c2_d4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c2) (on <y> d4))
+ (effects
+  (on <x> d4) (not-on <y> d4) (not-on <x> c2)
+  (empty c2) (not-empty d4)))
+
+(operator
+ take_d2_b1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d2) (on <y> b1))
+ (effects
+  (on <x> b1) (not-on <y> b1) (not-on <x> d2)
+  (empty d2) (not-empty b1)))
+
+(operator
+ take_d2_b3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d2) (on <y> b3))
+ (effects
+  (on <x> b3) (not-on <y> b3) (not-on <x> d2)
+  (empty d2) (not-empty b3)))
+
+(operator
+ take_d2_c4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d2) (on <y> c4))
+ (effects
+  (on <x> c4) (not-on <y> c4) (not-on <x> d2)
+  (empty d2) (not-empty c4)))
+
+(operator
+ take_a3_b1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a3) (on <y> b1))
+ (effects
+  (on <x> b1) (not-on <y> b1) (not-on <x> a3)
+  (empty a3) (not-empty b1)))
+
+(operator
+ take_a3_c4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a3) (on <y> c4))
+ (effects
+  (on <x> c4) (not-on <y> c4) (not-on <x> a3)
+  (empty a3) (not-empty c4)))
+
+(operator
+ take_a3_c2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a3) (on <y> c2))
+ (effects
+  (on <x> c2) (not-on <y> c2) (not-on <x> a3)
+  (empty a3) (not-empty c2)))
+
+(operator
+ take_b3_a1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b3) (on <y> a1))
+ (effects
+  (on <x> a1) (not-on <y> a1) (not-on <x> b3)
+  (empty b3) (not-empty a1)))
+
+(operator
+ take_b3_c1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b3) (on <y> c1))
+ (effects
+  (on <x> c1) (not-on <y> c1) (not-on <x> b3)
+  (empty b3) (not-empty c1)))
+
+(operator
+ take_b3_d2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b3) (on <y> d2))
+ (effects
+  (on <x> d2) (not-on <y> d2) (not-on <x> b3)
+  (empty b3) (not-empty d2)))
+
+(operator
+ take_c3_a4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c3) (on <y> a4))
+ (effects
+  (on <x> a4) (not-on <y> a4) (not-on <x> c3)
+  (empty c3) (not-empty a4)))
+
+(operator
+ take_c3_b1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c3) (on <y> b1))
+ (effects
+  (on <x> b1) (not-on <y> b1) (not-on <x> c3)
+  (empty c3) (not-empty b1)))
+
+(operator
+ take_c3_d1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c3) (on <y> d1))
+ (effects
+  (on <x> d1) (not-on <y> d1) (not-on <x> c3)
+  (empty c3) (not-empty d1)))
+
+(operator
+ take_d3_c1
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d3) (on <y> c1))
+ (effects
+  (on <x> c1) (not-on <y> c1) (not-on <x> d3)
+  (empty d3) (not-empty c1)))
+
+(operator
+ take_d3_b2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d3) (on <y> b2))
+ (effects
+  (on <x> b2) (not-on <y> b2) (not-on <x> d3)
+  (empty d3) (not-empty b2)))
+
+(operator
+ take_d3_b4
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d3) (on <y> b4))
+ (effects
+  (on <x> b4) (not-on <y> b4) (not-on <x> d3)
+  (empty d3) (not-empty b4)))
+
+(operator
+ take_a4_b2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a4) (on <y> b2))
+ (effects
+  (on <x> b2) (not-on <y> b2) (not-on <x> a4)
+  (empty a4) (not-empty b2)))
+
+(operator
+ take_a4_c3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> a4) (on <y> c3))
+ (effects
+  (on <x> c3) (not-on <y> c3) (not-on <x> a4)
+  (empty a4) (not-empty c3)))
+
+(operator
+ take_b4_a2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b4) (on <y> a2))
+ (effects
+  (on <x> a2) (not-on <y> a2) (not-on <x> b4)
+  (empty b4) (not-empty a2)))
+
+(operator
+ take_b4_c2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> b4) (on <y> c2))
+ (effects
+  (on <x> c2) (not-on <y> c2) (not-on <x> b4)
+  (empty b4) (not-empty c2)))
+
 (operator
  take_b4_d3
  (params (<x> Knight) (<y> Knight))
  (preconds
   (on <x> b4) (on <y> d3))
  (effects
-  (on <x> d3) (del on <x> b4) 
-  (not-on <x> b4) (not-on <y> d3)
+  (on <x> d3) (not-on <y> d3) (not-on <x> b4) (del <y>)
   (empty b4) (not-empty d3)))
 
+(operator
+ take_c4_a3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c4) (on <y> a3))
+ (effects
+  (on <x> a3) (not-on <y> a3) (not-on <x> c4)
+  (empty c4) (not-empty a3)))
+
+(operator
+ take_c4_b2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c4) (on <y> b2))
+ (effects
+  (on <x> b2) (not-on <y> b2) (not-on <x> c4)
+  (empty c4) (not-empty b2)))
+
+(operator
+ take_c4_d2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> c4) (on <y> d2))
+ (effects
+  (on <x> d2) (not-on <y> d2) (not-on <x> c4)
+  (empty c4) (not-empty d2)))
+
+(operator
+ take_d4_b3
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d4) (on <y> b3))
+ (effects
+  (on <x> b3) (not-on <y> b3) (not-on <x> d4)
+  (empty d4) (not-empty b3)))
+
+(operator
+ take_d4_c2
+ (params (<x> Knight) (<y> Knight))
+ (preconds
+  (on <x> d4) (on <y> c2))
+ (effects
+  (on <x> c2) (not-on <y> c2) (not-on <x> d4)
+  (empty d4) (not-empty c2)))

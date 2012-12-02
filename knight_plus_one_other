@@ -24,16 +24,19 @@
 (d4 Space)
 
 (preconds
- (on whiteKnight b4) (on k1 d3)
+ (on whiteKnight b2) (on k1 c3)
  (empty a1) (empty a2) (empty a3) (empty a4)
- (empty b1) (empty b2) (empty b3)
- (empty c1) (empty c2) (empty c3) (empty c4)
- (empty d1) (empty d2) (empty d4))
+ (empty b1) (empty b3) (empty b4)
+ (empty c1) (empty c2) (empty c4)
+ (empty d1) (empty d2) (empty d3) (empty d4))
 
 
 (effects
- (on whiteKnight a4) (not-on k1 d3)
+ (on whiteKnight a4) (taken k1)
  (empty a1) (empty a2) (empty a3) (not-empty a4)
  (empty b1) (empty b2) (empty b3) (empty b4)
  (empty c1) (empty c2) (empty c3) (empty c4)
  (empty d1) (empty d2) (empty d3) (empty d4))
+
+
+

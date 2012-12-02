@@ -4,7 +4,7 @@
  (preconds
   (on <x> a1))
  (effects
-  (on <x> b3) (not-on <x> a1)
+  (on <x> b3) (not-on <x> a1) (del on <x> a1)
   (empty a1) (not-empty b3)))
 
 (operator
@@ -13,7 +13,7 @@
  (preconds
   (on <x> a1))
  (effects
-  (on <x> c2) (not-on <x> a1)
+  (on <x> c2) (not-on <x> a1) (del on <x> a1)
   (empty a1) (not-empty c2)))
 
 (operator
@@ -22,7 +22,7 @@
  (preconds
   (on <x> b1))
  (effects
-  (on <x> a3) (not-on <x> b1)
+  (on <x> a3) (not-on <x> b1) (del on <x> b1)
   (empty b1) (not-empty a3)))
 
 (operator
@@ -31,7 +31,7 @@
  (preconds
   (on <x> b1))
  (effects
-  (on <x> c3) (not-on <x> b1)
+  (on <x> c3) (not-on <x> b1) (del on <x> b1)
   (empty b1) (not-empty c3)))
 
 (operator
@@ -40,7 +40,7 @@
  (preconds
   (on <x> b1))
  (effects
-  (on <x> d2) (not-on <x> b1)
+  (on <x> d2) (not-on <x> b1) (del on <x> b1)
   (empty b1) (not-empty d2)))
 
 (operator
@@ -49,7 +49,7 @@
  (preconds
   (on <x> c1))
  (effects
-  (on <x> a2) (not-on <x> c1)
+  (on <x> a2) (not-on <x> c1) (del on <x> c1)
   (empty c1) (not-empty a2)))
 
 (operator
@@ -58,7 +58,7 @@
  (preconds
   (on <x> c1))
  (effects
-  (on <x> b3) (not-on <x> c1)
+  (on <x> b3) (not-on <x> c1) (del on <x> c1)
   (empty c1) (not-empty b3)))
 
 (operator
@@ -67,7 +67,7 @@
  (preconds
   (on <x> c1))
  (effects
-  (on <x> d3) (not-on <x> c1)
+  (on <x> d3) (not-on <x> c1) (del on <x> c1)
   (empty c1) (not-empty d3)))
 
 (operator
@@ -76,7 +76,7 @@
  (preconds
   (on <x> d1))
  (effects
-  (on <x> b2) (not-on <x> d1)
+  (on <x> b2) (not-on <x> d1) (del on <x> d1)
   (empty d1) (not-empty b2)))
 
 (operator
@@ -85,7 +85,7 @@
  (preconds
   (on <x> d1))
  (effects
-  (on <x> c3) (not-on <x> d1)
+  (on <x> c3) (not-on <x> d1) (del on <x> d1)
   (empty d1) (not-empty c3)))
 
 (operator
@@ -94,7 +94,7 @@
  (preconds
   (on <x> a2))
  (effects
-  (on <x> c1) (not-on <x> a2)
+  (on <x> c1) (not-on <x> a2) (del on <x> a2)
   (empty a2) (not-empty c1)))
 
 (operator
@@ -103,7 +103,7 @@
  (preconds
   (on <x> a2))
  (effects
-  (on <x> c3) (not-on <x> a2)
+  (on <x> c3) (not-on <x> a2) (del on <x> a2)
   (empty a2) (not-empty c3)))
 
 (operator
@@ -112,16 +112,16 @@
  (preconds
   (on <x> a2))
  (effects
-  (on <x> b4) (not-on <x> a2)
+  (on <x> b4) (not-on <x> a2) (del on <x> a2)
   (empty a2) (not-empty b4)))
 
 (operator
  move_b2_a4
  (params (<x> Knight))
  (preconds
-  (on <x> b2))
+  (on <x> b2) (empty a4))
  (effects
-  (on <x> a4) (not-on <x> b2)
+  (on <x> a4) (not-on <x> b2) (del on <x> b2)
   (empty b2) (not-empty a4)))
 
 (operator
@@ -130,7 +130,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> c4) (not-on <x> b2)
+  (on <x> c4) (not-on <x> b2) (del on <x> b2)
   (empty b2) (not-empty c4)))
 
 (operator
@@ -139,7 +139,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> d3) (not-on <x> b2)
+  (on <x> d3) (not-on <x> b2) (del on <x> b2)
   (empty b2) (not-empty d3)))
 
 (operator
@@ -148,7 +148,7 @@
  (preconds
   (on <x> b2))
  (effects
-  (on <x> d1) (not-on <x> b2)
+  (on <x> d1) (not-on <x> b2) (del on <x> b2)
   (empty b2) (not-empty d1)))
 
 (operator
@@ -157,7 +157,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> a1) (not-on <x> c2)
+  (on <x> a1) (not-on <x> c2) (del on <x> c2)
   (empty c2) (not-empty a1)))
 
 (operator
@@ -166,7 +166,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> a3) (not-on <x> c2)
+  (on <x> a3) (not-on <x> c2) (del on <x> c2)
   (empty c2) (not-empty a3)))
 
 (operator
@@ -175,7 +175,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> b4) (not-on <x> c2)
+  (on <x> b4) (not-on <x> c2) (del on <x> c2)
   (empty c2) (not-empty b4)))
 
 (operator
@@ -184,7 +184,7 @@
  (preconds
   (on <x> c2))
  (effects
-  (on <x> d4) (not-on <x> c2)
+  (on <x> d4) (not-on <x> c2) (del on <x> c2)
   (empty c2) (not-empty d4)))
 
 (operator
@@ -193,7 +193,7 @@
  (preconds
   (on <x> d2))
  (effects
-  (on <x> b1) (not-on <x> d2)
+  (on <x> b1) (not-on <x> d2) (del on <x> d2)
   (empty d2) (not-empty b1)))
 
 (operator
@@ -202,7 +202,7 @@
  (preconds
   (on <x> d2))
  (effects
-  (on <x> b3) (not-on <x> d2)
+  (on <x> b3) (not-on <x> d2) (del on <x> d2)
   (empty d2) (not-empty b3)))
 
 (operator
@@ -211,7 +211,7 @@
  (preconds
   (on <x> d2))
  (effects
-  (on <x> c4) (not-on <x> d2)
+  (on <x> c4) (not-on <x> d2) (del on <x> d2)
   (empty d2) (not-empty c4)))
 
 (operator
@@ -220,7 +220,7 @@
  (preconds
   (on <x> a3))
  (effects
-  (on <x> b1) (not-on <x> a3)
+  (on <x> b1) (not-on <x> a3) (del on <x> a3)
   (empty a3) (not-empty b1)))
 
 (operator
@@ -229,7 +229,7 @@
  (preconds
   (on <x> a3))
  (effects
-  (on <x> c4) (not-on <x> a3)
+  (on <x> c4) (not-on <x> a3) (del on <x> a3)
   (empty a3) (not-empty c4)))
 
 (operator
@@ -238,7 +238,7 @@
  (preconds
   (on <x> a3))
  (effects
-  (on <x> c2) (not-on <x> a3)
+  (on <x> c2) (not-on <x> a3) (del on <x> a3)
   (empty a3) (not-empty c2)))
 
 (operator
@@ -247,7 +247,7 @@
  (preconds
   (on <x> b3))
  (effects
-  (on <x> a1) (not-on <x> b3)
+  (on <x> a1) (not-on <x> b3) (del on <x> b3)
   (empty b3) (not-empty a1)))
 
 (operator
@@ -256,7 +256,7 @@
  (preconds
   (on <x> b3))
  (effects
-  (on <x> c1) (not-on <x> b3)
+  (on <x> c1) (not-on <x> b3) (del on <x> b3)
   (empty b3) (not-empty c1)))
 
 (operator
@@ -265,7 +265,7 @@
  (preconds
   (on <x> b3))
  (effects
-  (on <x> d2) (not-on <x> b3)
+  (on <x> d2) (not-on <x> b3) (del on <x> b3)
   (empty b3) (not-empty d2)))
 
 (operator
@@ -274,7 +274,7 @@
  (preconds
   (on <x> c3))
  (effects
-  (on <x> a4) (not-on <x> c3)
+  (on <x> a4) (not-on <x> c3) (del on <x> c3)
   (empty c3) (not-empty a4)))
 
 (operator
@@ -283,7 +283,7 @@
  (preconds
   (on <x> c3))
  (effects
-  (on <x> b1) (not-on <x> c3)
+  (on <x> b1) (not-on <x> c3) (del on <x> c3)
   (empty c3) (not-empty b1)))
 
 (operator
@@ -292,7 +292,7 @@
  (preconds
   (on <x> c3))
  (effects
-  (on <x> d1) (not-on <x> c3)
+  (on <x> d1) (not-on <x> c3) (del on <x> c3)
   (empty c3) (not-empty d1)))
 
 (operator
@@ -301,7 +301,7 @@
  (preconds
   (on <x> d3))
  (effects
-  (on <x> c1) (not-on <x> d3)
+  (on <x> c1) (not-on <x> d3) (del on <x> d3)
   (empty d3) (not-empty c1)))
 
 (operator
@@ -310,7 +310,7 @@
  (preconds
   (on <x> d3))
  (effects
-  (on <x> b2) (not-on <x> d3)
+  (on <x> b2) (not-on <x> d3) (del on <x> d3)
   (empty d3) (not-empty b2)))
 
 (operator
@@ -319,7 +319,7 @@
  (preconds
   (on <x> d3))
  (effects
-  (on <x> b4) (not-on <x> d3)
+  (on <x> b4) (not-on <x> d3) (del on <x> d3)
   (empty d3) (not-empty b4)))
 
 (operator
@@ -328,7 +328,7 @@
  (preconds
   (on <x> a4))
  (effects
-  (on <x> b2) (not-on <x> a4)
+  (on <x> b2) (not-on <x> a4) (del on <x> a4)
   (empty a4) (not-empty b2)))
 
 (operator
@@ -337,7 +337,7 @@
  (preconds
   (on <x> a4))
  (effects
-  (on <x> c3) (not-on <x> a4)
+  (on <x> c3) (not-on <x> a4) (del on <x> a4)
   (empty a4) (not-empty c3)))
 
 (operator
@@ -346,7 +346,7 @@
  (preconds
   (on <x> b4))
  (effects
-  (on <x> a2) (not-on <x> b4)
+  (on <x> a2) (not-on <x> b4) (del on <x> b4)
   (empty b4) (not-empty a2)))
 
 (operator
@@ -355,7 +355,7 @@
  (preconds
   (on <x> b4))
  (effects
-  (on <x> c2) (not-on <x> b4)
+  (on <x> c2) (not-on <x> b4) (del on <x> b4)
   (empty b4) (not-empty c2)))
 
 (operator
@@ -364,7 +364,7 @@
  (preconds
   (on <x> b4))
  (effects
-  (on <x> d3) (not-on <x> b4)
+  (on <x> d3) (not-on <x> b4) (del on <x> b4)
   (empty b4) (not-empty d3)))
 
 (operator
@@ -373,7 +373,7 @@
  (preconds
   (on <x> c4))
  (effects
-  (on <x> a3) (not-on <x> c4)
+  (on <x> a3) (not-on <x> c4) (del on <x> c4)
   (empty c4) (not-empty a3)))
 
 (operator
@@ -382,7 +382,7 @@
  (preconds
   (on <x> c4))
  (effects
-  (on <x> b2) (not-on <x> c4)
+  (on <x> b2) (not-on <x> c4) (del on <x> c4)
   (empty c4) (not-empty b2)))
 
 (operator
@@ -391,7 +391,7 @@
  (preconds
   (on <x> c4))
  (effects
-  (on <x> d2) (not-on <x> c4)
+  (on <x> d2) (not-on <x> c4) (del on <x> c4)
   (empty c4) (not-empty d2)))
 
 (operator
@@ -400,7 +400,7 @@
  (preconds
   (on <x> d4))
  (effects
-  (on <x> b3) (not-on <x> d4)
+  (on <x> b3) (not-on <x> d4) (del on <x> d4)
   (empty d4) (not-empty b3)))
 
 (operator
@@ -409,7 +409,7 @@
  (preconds
   (on <x> d4))
  (effects
-  (on <x> c2) (not-on <x> d4)
+  (on <x> c2) (not-on <x> d4) (del on <x> d4)
   (empty d4) (not-empty c2)))
 
 
@@ -424,6 +424,7 @@
   (on <x> a1) (on <y> b3))
  (effects
   (on <x> b3) (not-on <y> b3) (not-on <x> a1)
+  (del on <x> a1) (taken <y>) (del <y>)
   (empty a1) (not-empty b3)))
 
 (operator
@@ -433,6 +434,7 @@
   (on <x> a1) (on <y> c2))
  (effects
   (on <x> c2) (not-on <y> c2) (not-on <x> a1)
+  (del on <x> a1) (taken <y>) (del <y>)
   (empty a1) (not-empty c2)))
 
 (operator
@@ -442,6 +444,7 @@
   (on <x> b1) (on <y> a3))
  (effects
   (on <x> a3) (not-on <y> a3) (not-on <x> b1)
+  (del on <x> b1) (taken <y>) (del <y>)
   (empty b1) (not-empty a3)))
 
 (operator
@@ -451,6 +454,7 @@
   (on <x> b1) (on <y> c3))
  (effects
   (on <x> c3) (not-on <y> c3) (not-on <x> b1)
+  (del on <x> b1) (taken <y>) (del <y>)
   (empty b1) (not-empty c3)))
 
 (operator
@@ -460,6 +464,7 @@
   (on <x> b1) (on <y> d2))
  (effects
   (on <x> d2) (not-on <y> d2) (not-on <x> b1)
+  (del on <x> b1) (taken <y>) (del <y>)
   (empty b1) (not-empty d2)))
 
 (operator
@@ -469,6 +474,7 @@
   (on <x> c1) (on <y> a2))
  (effects
   (on <x> a2) (not-on <y> a2) (not-on <x> c1)
+  (del on <x> c1) (taken <y>) (del <y>)
   (empty c1) (not-empty a2)))
 
 (operator
@@ -478,6 +484,7 @@
   (on <x> c1) (on <y> b3))
  (effects
   (on <x> b3) (not-on <y> b3) (not-on <x> c1)
+  (del on <x> c1) (taken <y>) (del <y>)
   (empty c1) (not-empty b3)))
 
 (operator
@@ -487,6 +494,7 @@
   (on <x> c1) (on <y> d3))
  (effects
   (on <x> d3) (not-on <y> d3) (not-on <x> c1)
+  (del on <x> c1) (taken <y>) (del <y>)
   (empty c1) (not-empty d3)))
 
 (operator
@@ -496,6 +504,7 @@
   (on <x> d1) (on <y> b2))
  (effects
   (on <x> b2) (not-on <y> b2) (not-on <x> d1)
+  (del on <x> d1) (taken <y>) (del <y>)
   (empty d1) (not-empty b2)))
 
 (operator
@@ -505,6 +514,7 @@
   (on <x> d1) (on <y> c3))
  (effects
   (on <x> c3) (not-on <y> c3) (not-on <x> d1)
+  (del on <x> d1) (taken <y>) (del <y>)
   (empty d1) (not-empty c3)))
 
 (operator
@@ -514,6 +524,7 @@
   (on <x> a2) (on <y> c1))
  (effects
   (on <x> c1) (not-on <y> c1) (not-on <x> a2)
+  (del on <x> a2) (taken <y>) (del <y>)
   (empty a2) (not-empty c1)))
 
 (operator
@@ -523,6 +534,7 @@
   (on <x> a2) (on <y> c3))
  (effects
   (on <x> c3) (not-on <y> c3) (not-on <x> a2)
+  (del on <x> a2) (taken <y>) (del <y>)
   (empty a2) (not-empty c3)))
 
 (operator
@@ -532,6 +544,7 @@
   (on <x> a2) (on <y> b4))
  (effects
   (on <x> b4) (not-on <y> b4) (not-on <x> a2)
+  (del on <x> a2) (taken <y>) (del <y>)
   (empty a2) (not-empty b4)))
 
 (operator
@@ -541,6 +554,7 @@
   (on <x> b2) (on <y> a4))
  (effects
   (on <x> a4) (not-on <y> a4) (not-on <x> b2)
+  (del on <x> b2) (taken <y>) (del <y>)
   (empty b2) (not-empty a4)))
 
 (operator
@@ -550,6 +564,7 @@
   (on <x> b2) (on <y> c4))
  (effects
   (on <x> c4) (not-on <y> c4) (not-on <x> b2)
+  (del on <x> b2) (taken <y>) (del <y>)
   (empty b2) (not-empty c4)))
 
 (operator
@@ -559,6 +574,7 @@
   (on <x> b2) (on <y> d3))
  (effects
   (on <x> d3) (not-on <y> d3) (not-on <x> b2)
+  (del on <x> b2) (taken <y>) (del <y>)
   (empty b2) (not-empty d3)))
 
 (operator
@@ -568,6 +584,7 @@
   (on <x> b2) (on <y> d1))
  (effects
   (on <x> d1) (not-on <y> d1) (not-on <x> b2)
+  (del on <x> b2) (taken <y>) (del <y>)
   (empty b2) (not-empty d1)))
 
 (operator
@@ -577,6 +594,7 @@
   (on <x> c2) (on <y> a1))
  (effects
   (on <x> a1) (not-on <y> a1) (not-on <x> c2)
+  (del on <x> c2) (taken <y>) (del <y>)
   (empty c2) (not-empty a1)))
 
 (operator
@@ -586,6 +604,7 @@
   (on <x> c2) (on <y> a3))
  (effects
   (on <x> a3) (not-on <y> a3) (not-on <x> c2)
+  (del on <x> c2) (taken <y>) (del <y>)
   (empty c2) (not-empty a3)))
 
 (operator
@@ -595,6 +614,7 @@
   (on <x> c2) (on <y> b4))
  (effects
   (on <x> b4) (not-on <y> b4) (not-on <x> c2)
+  (del on <x> c2) (taken <y>) (del <y>)
   (empty c2) (not-empty b4)))
 
 (operator
@@ -604,6 +624,7 @@
   (on <x> c2) (on <y> d4))
  (effects
   (on <x> d4) (not-on <y> d4) (not-on <x> c2)
+  (del on <x> c2) (taken <y>) (del <y>)
   (empty c2) (not-empty d4)))
 
 (operator
@@ -613,6 +634,7 @@
   (on <x> d2) (on <y> b1))
  (effects
   (on <x> b1) (not-on <y> b1) (not-on <x> d2)
+  (del on <x> d2) (taken <y>) (del <y>)
   (empty d2) (not-empty b1)))
 
 (operator
@@ -622,6 +644,7 @@
   (on <x> d2) (on <y> b3))
  (effects
   (on <x> b3) (not-on <y> b3) (not-on <x> d2)
+  (del on <x> d2) (taken <y>) (del <y>)
   (empty d2) (not-empty b3)))
 
 (operator
@@ -631,6 +654,7 @@
   (on <x> d2) (on <y> c4))
  (effects
   (on <x> c4) (not-on <y> c4) (not-on <x> d2)
+  (del on <x> d2) (taken <y>) (del <y>)
   (empty d2) (not-empty c4)))
 
 (operator
@@ -640,6 +664,7 @@
   (on <x> a3) (on <y> b1))
  (effects
   (on <x> b1) (not-on <y> b1) (not-on <x> a3)
+  (del on <x> a3) (taken <y>) (del <y>)
   (empty a3) (not-empty b1)))
 
 (operator
@@ -649,6 +674,7 @@
   (on <x> a3) (on <y> c4))
  (effects
   (on <x> c4) (not-on <y> c4) (not-on <x> a3)
+  (del on <x> a3) (taken <y>) (del <y>)
   (empty a3) (not-empty c4)))
 
 (operator
@@ -658,6 +684,7 @@
   (on <x> a3) (on <y> c2))
  (effects
   (on <x> c2) (not-on <y> c2) (not-on <x> a3)
+  (del on <x> a3) (taken <y>) (del <y>)
   (empty a3) (not-empty c2)))
 
 (operator
@@ -667,6 +694,7 @@
   (on <x> b3) (on <y> a1))
  (effects
   (on <x> a1) (not-on <y> a1) (not-on <x> b3)
+  (del on <x> b3) (taken <y>) (del <y>)
   (empty b3) (not-empty a1)))
 
 (operator
@@ -676,6 +704,7 @@
   (on <x> b3) (on <y> c1))
  (effects
   (on <x> c1) (not-on <y> c1) (not-on <x> b3)
+  (del on <x> b3) (taken <y>) (del <y>)
   (empty b3) (not-empty c1)))
 
 (operator
@@ -685,6 +714,7 @@
   (on <x> b3) (on <y> d2))
  (effects
   (on <x> d2) (not-on <y> d2) (not-on <x> b3)
+  (del on <x> b3) (taken <y>) (del <y>)
   (empty b3) (not-empty d2)))
 
 (operator
@@ -694,6 +724,7 @@
   (on <x> c3) (on <y> a4))
  (effects
   (on <x> a4) (not-on <y> a4) (not-on <x> c3)
+  (del on <x> c3) (taken <y>) (del <y>)
   (empty c3) (not-empty a4)))
 
 (operator
@@ -703,6 +734,7 @@
   (on <x> c3) (on <y> b1))
  (effects
   (on <x> b1) (not-on <y> b1) (not-on <x> c3)
+  (del on <x> c3) (taken <y>) (del <y>)
   (empty c3) (not-empty b1)))
 
 (operator
@@ -712,6 +744,7 @@
   (on <x> c3) (on <y> d1))
  (effects
   (on <x> d1) (not-on <y> d1) (not-on <x> c3)
+  (del on <x> c3) (taken <y>) (del <y>)
   (empty c3) (not-empty d1)))
 
 (operator
@@ -721,6 +754,7 @@
   (on <x> d3) (on <y> c1))
  (effects
   (on <x> c1) (not-on <y> c1) (not-on <x> d3)
+  (del on <x> d3) (taken <y>) (del <y>)
   (empty d3) (not-empty c1)))
 
 (operator
@@ -730,6 +764,7 @@
   (on <x> d3) (on <y> b2))
  (effects
   (on <x> b2) (not-on <y> b2) (not-on <x> d3)
+  (del on <x> d3) (taken <y>) (del <y>)
   (empty d3) (not-empty b2)))
 
 (operator
@@ -739,6 +774,7 @@
   (on <x> d3) (on <y> b4))
  (effects
   (on <x> b4) (not-on <y> b4) (not-on <x> d3)
+  (del on <x> d3) (taken <y>) (del <y>)
   (empty d3) (not-empty b4)))
 
 (operator
@@ -748,6 +784,7 @@
   (on <x> a4) (on <y> b2))
  (effects
   (on <x> b2) (not-on <y> b2) (not-on <x> a4)
+  (del on <x> a4) (taken <y>) (del <y>)
   (empty a4) (not-empty b2)))
 
 (operator
@@ -757,6 +794,7 @@
   (on <x> a4) (on <y> c3))
  (effects
   (on <x> c3) (not-on <y> c3) (not-on <x> a4)
+  (del on <x> a4) (taken <y>) (del <y>)
   (empty a4) (not-empty c3)))
 
 (operator
@@ -766,6 +804,7 @@
   (on <x> b4) (on <y> a2))
  (effects
   (on <x> a2) (not-on <y> a2) (not-on <x> b4)
+  (del on <x> b4) (taken <y>) (del <y>)
   (empty b4) (not-empty a2)))
 
 (operator
@@ -775,6 +814,7 @@
   (on <x> b4) (on <y> c2))
  (effects
   (on <x> c2) (not-on <y> c2) (not-on <x> b4)
+  (del on <x> b4) (taken <y>) (del <y>)
   (empty b4) (not-empty c2)))
 
 (operator
@@ -783,7 +823,8 @@
  (preconds
   (on <x> b4) (on <y> d3))
  (effects
-  (on <x> d3) (not-on <y> d3) (not-on <x> b4) (del <y>)
+  (on <x> d3) (not-on <y> d3) (not-on <x> b4) (taken <y>) (del <y>)
+  (del on <x> b4) (taken <y>) (del <y>)
   (empty b4) (not-empty d3)))
 
 (operator
@@ -793,6 +834,7 @@
   (on <x> c4) (on <y> a3))
  (effects
   (on <x> a3) (not-on <y> a3) (not-on <x> c4)
+  (del on <x> c4) (taken <y>) (del <y>)
   (empty c4) (not-empty a3)))
 
 (operator
@@ -802,6 +844,7 @@
   (on <x> c4) (on <y> b2))
  (effects
   (on <x> b2) (not-on <y> b2) (not-on <x> c4)
+  (del on <x> c4) (taken <y>) (del <y>)
   (empty c4) (not-empty b2)))
 
 (operator
@@ -811,6 +854,7 @@
   (on <x> c4) (on <y> d2))
  (effects
   (on <x> d2) (not-on <y> d2) (not-on <x> c4)
+  (del on <x> c4) (taken <y>) (del <y>)
   (empty c4) (not-empty d2)))
 
 (operator
@@ -820,6 +864,7 @@
   (on <x> d4) (on <y> b3))
  (effects
   (on <x> b3) (not-on <y> b3) (not-on <x> d4)
+  (del on <x> d4) (taken <y>) (del <y>)
   (empty d4) (not-empty b3)))
 
 (operator
@@ -829,4 +874,5 @@
   (on <x> d4) (on <y> c2))
  (effects
   (on <x> c2) (not-on <y> c2) (not-on <x> d4)
+  (del on <x> d4) (taken <y>) (del <y>)
   (empty d4) (not-empty c2)))

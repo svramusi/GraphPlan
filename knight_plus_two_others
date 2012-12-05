@@ -2,26 +2,6 @@
 (k1 Knight)
 (k2 Knight)
 
-(a1 Space)
-(a2 Space)
-(a3 Space)
-(a4 Space)
-
-(b1 Space)
-(b2 Space)
-(b3 Space)
-(b4 Space)
-
-(c1 Space)
-(c2 Space)
-(c3 Space)
-(c4 Space)
-
-(d1 Space)
-(d2 Space)
-(d3 Space)
-(d4 Space)
-
 (preconds
  (on whiteKnight b2) (on k1 c3) (on k2 b1)
  (not-taken whiteKnight) (not-taken k1) (not-taken k2)
@@ -36,6 +16,3 @@
  (empty b1) (empty b2) (empty b3) (empty b4)
  (empty c1) (empty c2) (empty c3) (empty c4)
  (empty d1) (empty d2) (empty d3) (empty d4))
-
-
-
